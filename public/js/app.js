@@ -17641,8 +17641,12 @@ module.exports = __webpack_require__(99);
 
 /***/ }),
 /* 36 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_chat2_ChatLayout_vue__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_chat2_ChatLayout_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_chat2_ChatLayout_vue__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -17660,9 +17664,15 @@ window.Vue = __webpack_require__(85);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('chat-layout', __webpack_require__(88));
+// Vue.component('chat-layout', require('./components/chat1/ChatLayout.vue'))
+// Vue.component('chat-layout', require('./components/chat2/ChatLayout.vue'))
+
+
 
 var app = new Vue({
+    components: {
+        'chat-layout': __WEBPACK_IMPORTED_MODULE_0__components_chat2_ChatLayout_vue___default.a
+    },
     el: '#app',
     data: {
         currentUserLogin: {}
@@ -57056,7 +57066,7 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-927db766"
+var __vue_scopeId__ = "data-v-48ef463c"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -57067,7 +57077,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/ChatLayout.vue"
+Component.options.__file = "resources/js/components/chat2/ChatLayout.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -57076,9 +57086,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-927db766", Component.options)
+    hotAPI.createRecord("data-v-48ef463c", Component.options)
   } else {
-    hotAPI.reload("data-v-927db766", Component.options)
+    hotAPI.reload("data-v-48ef463c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -57099,13 +57109,13 @@ var content = __webpack_require__(90);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(33)("6c7a904c", content, false, {});
+var update = __webpack_require__(33)("afb04982", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-927db766\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatLayout.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-927db766\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatLayout.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-48ef463c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatLayout.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-48ef463c\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatLayout.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -57123,7 +57133,7 @@ exports = module.exports = __webpack_require__(32)(false);
 
 
 // module
-exports.push([module.i, "\n.messages[data-v-927db766] {\n  height: 80%;\n  overflow-y: scroll;\n  padding: 0 20px;\n}\n\n/*--------------------\nBody\n--------------------*/\n.bg[data-v-927db766] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  z-index: 1;\n  background: url(\"https://images.unsplash.com/photo-1451186859696-371d9477be93?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925\") no-repeat 0 0;\n  -webkit-filter: blur(80px);\n          filter: blur(80px);\n  -webkit-transform: scale(1.2);\n          transform: scale(1.2);\n}\n\n/*--------------------\nChat\n--------------------*/\n.chat[data-v-927db766] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  width: 500px;\n  height: 80vh;\n  max-height: 700px;\n  z-index: 2;\n  overflow: hidden;\n  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);\n          box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);\n  background: rgba(0, 0, 0, 0.5);\n  border-radius: 20px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n\n/*--------------------\nChat Title\n--------------------*/\n.chat-title[data-v-927db766] {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 1 45px;\n          flex: 0 1 45px;\n  position: relative;\n  z-index: 2;\n  background: rgba(0, 0, 0, 0.2);\n  color: #fff;\n  text-transform: uppercase;\n  text-align: left;\n  padding: 10px 10px 10px 50px;\n}\n.chat-title h1[data-v-927db766], .chat-title h2[data-v-927db766] {\n    font-weight: normal;\n    font-size: 16px;\n    margin: 0;\n    padding: 0;\n}\n.chat-title h2[data-v-927db766] {\n    color: rgba(255, 255, 255, 0.5);\n    font-size: 8px;\n    letter-spacing: 1px;\n}\n.chat-title .avatar[data-v-927db766] {\n    position: absolute;\n    z-index: 1;\n    top: 8px;\n    left: 9px;\n    border-radius: 30px;\n    width: 30px;\n    height: 30px;\n    overflow: hidden;\n    margin: 0;\n    padding: 0;\n    border: 2px solid rgba(255, 255, 255, 0.24);\n}\n.chat-title .avatar img[data-v-927db766] {\n      width: 100%;\n      height: auto;\n}\n\n/*--------------------\nMessage Box\n--------------------*/\n.message-box[data-v-927db766] {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 1 40px;\n          flex: 0 1 40px;\n  width: 100%;\n  background: rgba(0, 0, 0, 0.3);\n  padding: 10px;\n  position: relative;\n}\n.message-box .message-input[data-v-927db766] {\n    background: none;\n    border: none;\n    outline: none !important;\n    resize: none;\n    color: rgba(255, 255, 255, 0.7);\n    font-size: 11px;\n    height: 17px;\n    margin: 0;\n    padding-right: 20px;\n    width: 265px;\n}\n.message-box textarea[data-v-927db766]:focus:-webkit-placeholder {\n    color: transparent;\n}\n.message-box .message-submit[data-v-927db766] {\n    position: absolute;\n    z-index: 1;\n    top: 9px;\n    right: 10px;\n    color: #fff;\n    border: none;\n    background: #248A52;\n    font-size: 10px;\n    text-transform: uppercase;\n    line-height: 1;\n    padding: 6px 10px;\n    border-radius: 10px;\n    outline: none !important;\n    -webkit-transition: background .2s ease;\n    transition: background .2s ease;\n}\n.message-box .message-submit[data-v-927db766]:hover {\n      background: #1D7745;\n}\n", ""]);
+exports.push([module.i, "\n.messages[data-v-48ef463c] {\n  height: 80%;\n  overflow-y: scroll;\n  padding: 0 20px;\n}\n\n/*--------------------\nBody\n--------------------*/\n.bg[data-v-48ef463c] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  z-index: 1;\n  background: url(\"https://images.unsplash.com/photo-1451186859696-371d9477be93?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925\") no-repeat 0 0;\n  -webkit-filter: blur(80px);\n          filter: blur(80px);\n  -webkit-transform: scale(1.2);\n          transform: scale(1.2);\n}\n\n/*--------------------\nChat\n--------------------*/\n.chat[data-v-48ef463c] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  width: 500px;\n  height: 80vh;\n  max-height: 700px;\n  z-index: 2;\n  overflow: hidden;\n  -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);\n          box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);\n  background: rgba(0, 0, 0, 0.5);\n  border-radius: 20px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n\n/*--------------------\nChat Title\n--------------------*/\n.chat-title[data-v-48ef463c] {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 1 45px;\n          flex: 0 1 45px;\n  position: relative;\n  z-index: 2;\n  background: rgba(0, 0, 0, 0.2);\n  color: #fff;\n  text-transform: uppercase;\n  text-align: left;\n  padding: 10px 10px 10px 50px;\n}\n.chat-title h1[data-v-48ef463c],\n  .chat-title h2[data-v-48ef463c] {\n    font-weight: normal;\n    font-size: 16px;\n    margin: 0;\n    padding: 0;\n}\n.chat-title h2[data-v-48ef463c] {\n    color: rgba(255, 255, 255, 0.5);\n    font-size: 8px;\n    letter-spacing: 1px;\n}\n.chat-title .avatar[data-v-48ef463c] {\n    position: absolute;\n    z-index: 1;\n    top: 8px;\n    left: 9px;\n    border-radius: 30px;\n    width: 30px;\n    height: 30px;\n    overflow: hidden;\n    margin: 0;\n    padding: 0;\n    border: 2px solid rgba(255, 255, 255, 0.24);\n}\n.chat-title .avatar img[data-v-48ef463c] {\n      width: 100%;\n      height: auto;\n}\n\n/*--------------------\nMessage Box\n--------------------*/\n.message-box[data-v-48ef463c] {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 1 40px;\n          flex: 0 1 40px;\n  width: 100%;\n  background: rgba(0, 0, 0, 0.3);\n  padding: 10px;\n  position: relative;\n}\n.message-box .message-input[data-v-48ef463c] {\n    background: none;\n    border: none;\n    outline: none !important;\n    resize: none;\n    color: rgba(255, 255, 255, 0.7);\n    font-size: 11px;\n    height: 17px;\n    margin: 0;\n    padding-right: 20px;\n    width: 265px;\n}\n.message-box textarea[data-v-48ef463c]:focus:-webkit-placeholder {\n    color: transparent;\n}\n.message-box .message-submit[data-v-48ef463c] {\n    position: absolute;\n    z-index: 1;\n    top: 9px;\n    right: 10px;\n    color: #fff;\n    border: none;\n    background: #248a52;\n    font-size: 10px;\n    text-transform: uppercase;\n    line-height: 1;\n    padding: 6px 10px;\n    border-radius: 10px;\n    outline: none !important;\n    -webkit-transition: background 0.2s ease;\n    transition: background 0.2s ease;\n}\n.message-box .message-submit[data-v-48ef463c]:hover {\n      background: #1d7745;\n}\n", ""]);
 
 // exports
 
@@ -57189,57 +57199,75 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        ChatItem: __WEBPACK_IMPORTED_MODULE_0__ChatItem_vue___default.a
-    },
-    data: function data() {
-        return {
-            message: '',
-            list_messages: []
-        };
-    },
-    created: function created() {
-        var _this = this;
+  components: {
+    'chat-item': __WEBPACK_IMPORTED_MODULE_0__ChatItem_vue___default.a
+  },
+  data: function data() {
+    return {
+      message: '',
+      list_messages: []
+    };
+  },
+  created: function created() {
+    var _this = this;
 
-        this.loadMessage();
-        Echo.channel('chatroom').listen('MessagePosted', function (data) {
-            var message = data.message;
-            message.user = data.user;
-            _this.list_messages.push(message);
+    this.loadMessage();
+
+    Echo.channel('chatroom').listen('MessagePosted2', function (data) {
+      var message = data.message;
+      message.user = data.user;
+      _this.list_messages.push(message);
+    });
+  },
+
+  methods: {
+    loadMessage: function loadMessage() {
+      var _this2 = this;
+
+      axios.get('/chat2/messages').then(function (res) {
+        _this2.list_messages = res.data;
+      }).catch(function (error) {
+        console.log(error);
+      });
+    },
+    sendMessage: function sendMessage() {
+      var _this3 = this;
+
+      axios.post('/chat2/messages', {
+        message: this.message
+      }).then(function (res) {
+        _this3.list_messages.push({
+          message: _this3.message,
+          created_at: new Date().toJSON(),
+          user: _this3.$root.currentUserLogin
         });
-    },
 
-    methods: {
-        loadMessage: function loadMessage() {
-            var _this2 = this;
-
-            axios.get('/messages').then(function (response) {
-                _this2.list_messages = response.data;
-            }).catch(function (error) {
-                console.log(error);
-            });
-        },
-        sendMessage: function sendMessage() {
-            var _this3 = this;
-
-            axios.post('/messages', {
-                message: this.message
-            }).then(function (response) {
-                console.log('success');
-                _this3.list_messages.push({
-                    message: _this3.message,
-                    created_at: new Date().toJSON().replace(/T|Z/gi, ' '),
-                    user: _this3.$root.currentUserLogin
-                });
-                _this3.message = '';
-            }).catch(function (error) {
-                console.log(error);
-            });
-        }
+        _this3.message = '';
+      }).catch(function (error) {
+        console.log(error);
+      });
     }
+  }
 });
 
 /***/ }),
@@ -57261,7 +57289,7 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-ccaa2314"
+var __vue_scopeId__ = "data-v-22a1484b"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -57272,7 +57300,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/ChatItem.vue"
+Component.options.__file = "resources/js/components/chat2/ChatItem.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -57281,9 +57309,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ccaa2314", Component.options)
+    hotAPI.createRecord("data-v-22a1484b", Component.options)
   } else {
-    hotAPI.reload("data-v-ccaa2314", Component.options)
+    hotAPI.reload("data-v-22a1484b", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -57304,13 +57332,13 @@ var content = __webpack_require__(95);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(33)("64016b31", content, false, {});
+var update = __webpack_require__(33)("3132b458", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ccaa2314\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatItem.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ccaa2314\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatItem.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-22a1484b\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatItem.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-22a1484b\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChatItem.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -57328,7 +57356,7 @@ exports = module.exports = __webpack_require__(32)(false);
 
 
 // module
-exports.push([module.i, "\n.message[data-v-ccaa2314] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  color: #00b8ff;\n}\n.message .message-item[data-v-ccaa2314]:not(:last-child) {\n    margin-right: 5px;\n}\n.message[data-v-ccaa2314]:not(:last-child) {\n  padding-bottom: 20px;\n}\n.is-current-user[data-v-ccaa2314] {\n  color: #a900ff;\n}\n", ""]);
+exports.push([module.i, "\n.message[data-v-22a1484b] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  color: #00b8ff;\n}\n.message .message-item[data-v-22a1484b]:not(:last-child) {\n    margin-right: 5px;\n}\n.message[data-v-22a1484b]:not(:last-child) {\n  padding-bottom: 20px;\n}\n.is-current-user[data-v-22a1484b] {\n  color: white;\n}\n", ""]);
 
 // exports
 
@@ -57350,12 +57378,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-	props: ['message']
+  props: ['message']
 });
 
 /***/ }),
@@ -57376,17 +57401,15 @@ var render = function() {
     },
     [
       _c("div", { staticClass: "message-item user-name" }, [
-        _vm._v("\n\t\t" + _vm._s(_vm.message.user.name) + "\n\t")
+        _vm._v(_vm._s(_vm.message.user.name))
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "message-item timestamp" }, [
-        _vm._v(
-          "\n\t\t| " + _vm._s(_vm.message.created_at.split(" ")[1]) + ": \n\t"
-        )
+        _vm._v("| " + _vm._s(_vm.message.created_at.split(" ")[1]) + ":")
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "message-item text-message" }, [
-        _vm._v("\n\t\t" + _vm._s(_vm.message.message) + "\n\t")
+        _vm._v(_vm._s(_vm.message.message))
       ])
     ]
   )
@@ -57397,7 +57420,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-ccaa2314", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-22a1484b", module.exports)
   }
 }
 
@@ -57418,7 +57441,7 @@ var render = function() {
           "div",
           { staticClass: "messages-content" },
           _vm._l(_vm.list_messages, function(message, index) {
-            return _c("ChatItem", { key: index, attrs: { message: message } })
+            return _c("chat-item", { key: index, attrs: { message: message } })
           })
         )
       ]),
@@ -57462,7 +57485,7 @@ var render = function() {
             attrs: { type: "button" },
             on: { click: _vm.sendMessage }
           },
-          [_vm._v("Send")]
+          [_vm._v("\n        Send\n      ")]
         )
       ])
     ]),
@@ -57485,7 +57508,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-927db766", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-48ef463c", module.exports)
   }
 }
 

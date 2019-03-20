@@ -15,9 +15,15 @@ window.Vue = require('vue')
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('chat-layout', require('./components/ChatLayout.vue'))
+// Vue.component('chat-layout', require('./components/chat1/ChatLayout.vue'))
+// Vue.component('chat-layout', require('./components/chat2/ChatLayout.vue'))
+
+import ChatLayout from './components/chat2/ChatLayout.vue'
 
 const app = new Vue({
+    components: {
+        'chat-layout': ChatLayout
+    },
     el: '#app',
     data: {
         currentUserLogin: {}
